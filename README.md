@@ -10,5 +10,5 @@ notes:<br/>
 <code>$ cd llvm-project-llvmorg-10.0.1</code><br/>
 <code>$ mkdir build</code><br/>
 <code>$ cd build</code><br/>
-<code>$ cmake -DLLVM_ENABLE_PROJECTS='clang;lldb' -DLLDB_TEST_COMPILER=/usr/bin/gcc  -DLLDB_USE_SYSTEM_DEBUGSERVER=ON -DLLDB_INCLUDE_TESTS=OFF -G "Unix Makefiles" ../llvm</code><br/>
+<code>$ cmake -DLLVM_ENABLE_PROJECTS='clang;lldb' -DLLDB_TEST_COMPILER=/usr/bin/gcc -DLLDB_USE_SYSTEM_DEBUGSERVER=ON -DLLDB_INCLUDE_TESTS=OFF -G "Unix Makefiles" ../llvm</code><br/>
 <code>$ make -j10 lldb</code><br/>
