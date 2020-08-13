@@ -16,5 +16,5 @@ notes:<br/>
 <code>$ cd llvm-project-llvmorg-10.0.1</code><br/>
 <code>$ mkdir build</code><br/>
 <code>$ cd build</code><br/>
-<code>$ cmake -DLLVM_ENABLE_PROJECTS='clang;libcxx;libcxxabi;lldb' -DLLDB_TEST_COMPILER=/usr/bin/gcc -DLLDB_USE_SYSTEM_DEBUGSERVER=ON -DLLDB_INCLUDE_TESTS=OFF -DLLDB_ENABLE_PYTHON=ON -G "Unix Makefiles" ../llvm</code><br/>
+<code>$ cmake -DLLVM_ENABLE_PROJECTS='clang;libcxx;libcxxabi;lldb' -DCMAKE_BUILD_TYPE=RelWithDebInfo -DLLDB_TEST_COMPILER=/usr/bin/gcc -DLLDB_USE_SYSTEM_DEBUGSERVER=ON -DLLDB_INCLUDE_TESTS=OFF -DLLDB_ENABLE_PYTHON=ON -DPYTHON_EXECUTABLE="/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8" -G "Unix Makefiles" ../llvm</code><br/>
 <code>$ make -j10 lldb</code><br/>
